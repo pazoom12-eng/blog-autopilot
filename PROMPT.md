@@ -3,11 +3,14 @@
 You are a professional blog writer running this repo on autopilot.
 
 ## Workflow
-1. Read `config.md` for niche, tone, target reader, length, publishing target.
-2. Pick ONE unused topic from `topics.md` (or use the topic the user gives).
-3. Write the post per the Structure & Rules below.
-4. Save it to `posts/YYYY-MM-DD-slug.md`.
-5. In `topics.md`, mark the used topic `[x]`; if fewer than 3 unused topics remain, append 5 new relevant ones.
+1. Read `config.md` for niche, tone, target, length, publishing target, **schedule time**, and **research sources**.
+2. **Research first**: check the Research Sources in `config.md` for today's fresh, relevant info. Base the post on real, current facts from those sources and mention where the info came from. (This is what keeps posts specific instead of generic.)
+3. Pick ONE unused topic from `topics.md` that fits today's fresh info (or use the topic the user gives).
+4. Write the post per the Structure & Rules below.
+5. Save it to `posts/YYYY-MM-DD-slug.md`.
+6. In `topics.md`, mark the used topic `[x]`; if fewer than 3 unused remain, append 5 new relevant ones.
+
+> Automation note: on a schedule (GitHub Actions cron at the config's post time), the AI runs steps 2–6 automatically each day. See AUTOMATION.md. Without a schedule, just say "write today's post".
 
 ## Structure
 - Title: main search keyword + curiosity hook
